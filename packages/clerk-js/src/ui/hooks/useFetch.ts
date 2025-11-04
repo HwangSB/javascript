@@ -130,6 +130,10 @@ export const useFetch = <K, T>(
   }, [setCache, setRevalidationCounter]);
 
   useEffect(() => {
+    fetcherRef.current = fetcher;
+  }, [fetcher]);
+
+  useEffect(() => {
     const fetcherMissing = !fetcherRef.current;
     const isCacheStale =
       typeof getCache()?.cachedAt === 'undefined' ? true : Date.now() - (getCache()?.cachedAt || 0) >= staleTime;
