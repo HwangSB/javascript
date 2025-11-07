@@ -320,7 +320,7 @@ export interface Clerk {
   /**
    * Opens the Clerk Enable Organizations prompt for development environments
    */
-  __internal_openEnableOrganizationsPrompt: (props?: __internal_EnableOrganizationsPromptProps) => void;
+  __internal_openEnableOrganizationsPrompt: (props: __internal_EnableOrganizationsPromptProps) => void;
 
   /**
    * Closes the Clerk Enable Organizations modal.
@@ -1437,7 +1437,7 @@ export type __internal_UserVerificationProps = RoutingOptions & {
 export type __internal_UserVerificationModalProps = WithoutRouting<__internal_UserVerificationProps>;
 
 export type __internal_EnableOrganizationsPromptProps = {
-  callerName?: string;
+  callerName: string;
 };
 
 type GoogleOneTapRedirectUrlProps = SignInForceRedirectUrl & SignUpForceRedirectUrl;
