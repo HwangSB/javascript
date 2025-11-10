@@ -825,7 +825,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationSwitcher',
+          componentName: 'OrganizationProfile',
         });
       }
       return;
@@ -855,7 +855,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationSwitcher',
+          componentName: 'OrganizationSwitcher',
         });
       }
       return;
@@ -997,7 +997,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationProfile',
+          componentName: 'OrganizationProfile',
         });
       }
       return;
@@ -1037,7 +1037,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationSwitcher',
+          componentName: 'OrganizationSwitcher',
         });
       }
       return;
@@ -1068,7 +1068,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationSwitcher',
+          componentName: 'OrganizationSwitcher',
         });
       }
       return;
@@ -1107,7 +1107,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationList',
+          componentName: 'OrganizationList',
         });
       }
       return;
@@ -1294,7 +1294,7 @@ export class Clerk implements ClerkInterface {
     if (disabledOrganizationsFeature(this, this.environment)) {
       if (this.#instanceType === 'development') {
         this.__internal_openEnableOrganizationsPrompt({
-          callerName: 'OrganizationSwitcher',
+          componentName: 'OrganizationSwitcher',
         });
       }
       return;
